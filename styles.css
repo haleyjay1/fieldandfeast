@@ -1,9 +1,85 @@
 /* CSS BY Haley Jay */
+
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* CSS REST */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ROOT VARIABLES */
+:root {
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+
+    --font-primary: 'Playfair Display', serif;
+}
+
 /* GLOBAL STYLES (mobile first/small) */
+body {
+    font-family: var(--font-primary);
+    background-color: var(--linen);
+    color: var(--dark-charcoal);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--olive-green);
+}
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+section {
+    padding: 2rem 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+}
+
 /* MEDIA QUERY MEDIUM */
 /* MEDIA QUERY LARGE */
 /* MEDIA QUERY X-LARGE */
