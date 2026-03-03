@@ -81,5 +81,21 @@ footer {
 }
 
 /* MEDIA QUERY MEDIUM */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .gallery-item {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
 /* MEDIA QUERY LARGE */
 /* MEDIA QUERY X-LARGE */
